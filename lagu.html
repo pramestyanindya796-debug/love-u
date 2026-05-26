@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilih Lagu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card">
+
+    <h1>Pilih Lagu 🎵</h1>
+
+    <button class="btn" onclick="pilihLagu('debu')">
+      Sampai Jadi Debu
+    </button>
+
+    <button class="btn" onclick="pilihLagu('masa')">
+      Masa Ini, Nanti, Masa Indah
+    </button>
+
+  </div>
+
+</div>
+
+<script>
+
+function pilihLagu(lagu){
+
+  localStorage.setItem("laguDipilih", lagu);
+
+  window.location.href = "gallery.html";
+
+}
+
+</script>
+
+</body>
+</html>
